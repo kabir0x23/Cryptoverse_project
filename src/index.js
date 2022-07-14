@@ -10,8 +10,8 @@ import 'antd/dist/antd.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        {/*<Router basename={"/cryptoverse"}>*/}
-        <Router>
+        <Router basename={"/Cryptoverse_project"}>
+        {/*<Router>*/}
             <Provider store={store}>
                 <App/>
             </Provider>
