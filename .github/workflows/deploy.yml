@@ -24,13 +24,13 @@ jobs:
 
       - run: npm install
       - run: npm run build
+
         env:
-          REACT_APP_APIKey: ${{ secrets.REACT_APP_APIKey }}
+          REACT_APP_RAPIDAPI_KEY: ${{ secrets.REACT_APP_RAPIDAPI_KEY }}
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
 
